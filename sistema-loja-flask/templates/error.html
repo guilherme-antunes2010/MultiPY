@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+     <div class="error">
+         <div class="top">
+                <img src="{{ url_for('static', filename='images/2.png') }}" alt="Logo"/>
+                <h2>Erro</h2>
+             </div>
+             <h3>Dados digitados errados.</h3>
+             <a href="{{ url_for('login') }}">Voltar para o Login</a>
+     </div>
+</body>
+</html>

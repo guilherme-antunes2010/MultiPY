@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <title>MultiPY | Sobre</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/1.png') }}" alt="Logo MultiPY" class="logo">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="tem-submenu">
+                        <a href="#">Produtos</a>
+                        <ul class="submenu">
+                            <li><a href="{{ url_for('add_product') }}">Adicionar Produto</a></li>
+                            <li><a href="{{ url_for('edit_product') }}">Editar Produto</a></li>
+                            <li><a href="{{ url_for('del_product') }}">Excluir Produto</a></li>
+                            <li><a href="{{ url_for('list_product') }}">Visualizar Produtos</a></li>
+                        </ul>
+                    </li>
+                    <li class="tem-submenu">
+                        <a href="#">Clientes</a>
+                        <ul class="submenu">
+                            <li><a href="{{ url_for('add_client') }}">Adicionar Clientes</a></li>
+                            <li><a href="{{ url_for('edit_client') }}">Editar Clientes</a></li>
+                            <li><a href="{{ url_for('del_client') }}">Excluir Clientes</a></li>
+                            <li><a href="{{ url_for('list_client') }}">Visualizar Clientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="tem-submenu">
+                        <a href="#">Vendas</a>
+                        <ul class="submenu">
+                            <li><a href="{{ url_for('add_sale') }}">Adicionar Vendas</a></li>
+                            <li><a href="{{ url_for('search_sale') }}">Buscar Venda</a></li>
+                            <li><a href="{{ url_for('list_sale') }}">Visualizar Vendas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{ url_for('relatorios') }}">Relatórios</a></li>
+                    <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                    <li><a href="mailto:guilhermeantunes201008@gmail.com?subject=Suporte%20no%20sistema%20MultiPY">Contato</a></li>
+                    <li><a href="{{ url_for('login') }}">Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <h1>Bem-vindo(a) ao MultiPY</h1>
+            <h2>Sobre Nós</h2>
+            <div class="sobre">
+                <h2>História</h2>
+                <p>O MultiPY surgiu porque percebi como é difícil para muitos pequenos comerciantes — aquelas vendinhas e mercearias de esquina — controlarem suas vendas. Muitos ainda usam caderninhos ou softwares complicados que não ajudam muito no dia a dia. Então, pensei: por que não criar um sistema simples, feito especialmente pra eles, que facilite essa organização? Foi assim que nasceu o MultiPY, um sistema feito em Python, pensado para ajudar de verdade quem toca um pequeno negócio.</p>
+                <h2>Criador</h2>
+                <p>Eu sou o Guilherme Antunes, tenho 17 anos e estou no 3º ano do ensino médio no CEEP, no curso de Desenvolvimento de Sistemas. Esse projeto, o MultiPY, foi o meu trabalho de conclusão de curso (TCC). Durante o desenvolvimento, quis criar algo útil e fácil de usar, que realmente faça diferença na vida dos pequenos empreendedores, aplicando o que aprendi de programação.</p>
+                <h2>Por que usar?</h2>
+                <p>Se você tem uma vendinha ou mercadinho e está cansado de anotar tudo no caderninho ou mexer em sistemas complicados, o MultiPY foi feito pra você. Ele ajuda a organizar as vendas e o estoque de um jeito simples, sem enrolação. Assim, você economiza tempo, evita erros e consegue focar no que importa: fazer o seu negócio crescer.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
